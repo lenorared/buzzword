@@ -36,8 +36,10 @@ var adjectives = [
 "Managerial",
 "Fundamental",
 "360",
+"Shared", 
 "Vertical",
 "Remote",
+"Sustainable", 
 "High-margin",
 "Virtual",
 "Scalable",
@@ -50,6 +52,7 @@ var adjectives = [
 
 var nouns = [
 "Cloud",
+"Capacity",
 "Waterfall",
 "Expectations",
 "Leadership",
@@ -61,6 +64,7 @@ var nouns = [
 "Opportunities",
 "Diversity",
 "Behavior",
+"Leadership",
 "Values",
 "Services",
 "Dresscode",
@@ -74,8 +78,8 @@ var nouns = [
 "Customers",
 "Clients",
 "Diversity",
-"CRUD App",
-"agile",
+//"CRUD App",
+"Agile",
 "Startup",
 "Networking",
 "Integration",
@@ -93,7 +97,7 @@ var nouns = [
 "Impact",
 "Price Point",
 "Window of Opportunity",
-"Low hanging fruit",
+"Low Hanging Fruit",
 "Best Practices",
 "Deep Dive"
 ];

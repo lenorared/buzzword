@@ -1,7 +1,25 @@
 body {
-    background-color: pink;
+    background-color: #ffe6cc;
+    color: #37aab7;
 }
 
-body h1 {
-    color: red; 
+
+#container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+#result {
+    /* font-size: 1.5em;
+   color: #37aab7; */
+    margin-top: 50px;
+    border: 1px black solid;
+    border-radius: 25px;
+    width: 400px;
+    height: 100px; 
+    text-align: center;
+    padding: 20px;
 }
