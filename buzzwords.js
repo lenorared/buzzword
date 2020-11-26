@@ -47,7 +47,11 @@ var adjectives = [
 "Online",
 "Mission Critical",
 "End to End",
-"Next Level"
+"Next Level",
+"PiggyBack",
+"Huddle Up",
+"Add Some Color",
+"Jump On A Call"
 ];
 
 var nouns = [
@@ -99,7 +103,10 @@ var nouns = [
 "Window of Opportunity",
 "Low Hanging Fruit",
 "Best Practices",
-"Deep Dive"
+"Deep Dive",
+"Wagons",
+"More to come on That",
+"Offline"
 ];
 
 function nameMeeting() {
