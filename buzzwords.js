@@ -24,7 +24,30 @@ var verbs =  [
 "Taking to the Next Level",
 "Motivate",
 "Circle Back",
-"Touch Base"
+"Touch Base", 
+"Zoom In",
+"Thinking",
+"Processing",
+"Imagine",
+"Create",
+"Recap",
+"Confirm",
+"Process",
+"Automate",
+"Notify",
+"Issue",
+"Speeding Up",
+"Simplify",
+"Minimize",
+"Offer",
+"Manifest",
+"Submit",
+"Engineer",
+"Generate",
+"Acquire",
+"Document",
+"Map",
+"Coordinate"
 ];
 
 var adjectives = [
@@ -51,7 +74,16 @@ var adjectives = [
 "PiggyBack",
 "Huddle Up",
 "Add Some Color",
-"Jump On A Call"
+"Jump On A Call",
+"Deep Dive",
+"End Of Day",
+"Seamless",
+"Floating",
+"Behind The Scenes",
+"Happening Now",
+"Inbound",
+"Outbound",
+"Capable"
 ];
 
 var nouns = [
@@ -106,7 +138,24 @@ var nouns = [
 "Deep Dive",
 "Wagons",
 "More to come on That",
-"Offline"
+"Offline",
+"Decision Points",
+"Action",
+"Interface",
+"Flow",
+"Teamwork",
+"Workshop",
+"Interchange",
+"Inventory",
+"Platform",
+"Conversation",
+"Data",
+"Business",
+"Consumer",
+"System",
+"Credit",
+"Dinosaur",
+"Environment"
 ];
 
 function nameMeeting() {
