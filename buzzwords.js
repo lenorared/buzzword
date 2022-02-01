@@ -104,6 +104,8 @@ var nouns = [
 
 function nameMeeting() {
 //3 random variables
+const oct = document.getElementById("myImg");
+oct.classList.add("octo"); 
 var randomVerb =Math.floor(Math.random() * verbs.length);
 var randomAdj = Math.floor(Math.random() * adjectives.length);
 var randomNoun = Math.floor(Math.random() * nouns.length);
@@ -115,4 +117,8 @@ var noun = nouns[randomNoun];
 var meeting =  verb + ' ' + adj + ' ' + noun;
 
 document.getElementById("result").innerHTML = meeting;
+
+setTimeout(function() {
+    oct.classList.remove("octo"); 
+  }, 500);
 }
