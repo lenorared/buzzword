@@ -102,6 +102,8 @@ var nouns = [
 "Deep Dive"
 ];
 
+var octoBand = 0; 
+
 function nameMeeting() {
 //3 random variables
 const oct = document.getElementById("myImg");
@@ -118,7 +120,45 @@ var meeting =  verb + ' ' + adj + ' ' + noun;
 
 document.getElementById("result").innerHTML = meeting;
 
+promoteOcto(); 
+
 setTimeout(function() {
     oct.classList.remove("octo"); 
   }, 500);
+
+}
+
+function promoteOcto() {
+ octoBand++; 
+
+switch(octoBand) {
+  case 5:
+    document.getElementById("promoteMe").innerHTML = "Octopus Nailed his conference call!"; 
+    break;
+  case 9:
+    document.getElementById("promoteMe").innerHTML = "Octopus got promoted to Assistant Manager!"; 
+    break;
+  case 13:
+        document.getElementById("promoteMe").innerHTML = "Octopus is taking night classes for his Master's"; 
+        break; 
+  case 20:
+        document.getElementById("promoteMe").innerHTML = "Octopus got promoted to Manager!"; 
+       break;
+  case 24:
+    document.getElementById("promoteMe").innerHTML = "Octopus got promoted Vice President of Technology!"; 
+    break;      
+   case 29:
+        document.getElementById("promoteMe").innerHTML = "Octopus made it to CEO!! ";       
+    break;  
+    case 33:
+        document.getElementById("promoteMe").innerHTML = "Octopus fired your lazy ass";    
+        break;    
+   case 37:
+            document.getElementById("promoteMe").innerHTML = "Octopus sold the company for a cool billion";       
+    break;  
+    case 40:
+        document.getElementById("promoteMe").innerHTML = "Octopus is on a yacht with supermodels";       
+    break;   
+  
+}
 }
