@@ -58,6 +58,11 @@ body {
     backface-visibility: hidden;
     perspective: 1000px;
   } 
+
+  .help {
+      font-size: 1.5em;
+      font-weight: 600;
+  }
   
   @keyframes shake {
     10%, 90% {
