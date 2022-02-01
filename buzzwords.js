@@ -79,7 +79,7 @@ var nouns = [
 "Clients",
 "Diversity",
 //"CRUD App",
-"Agile",
+//"Agile",
 "Startup",
 "Networking",
 "Integration",
