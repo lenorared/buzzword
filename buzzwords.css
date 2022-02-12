@@ -64,6 +64,29 @@ body {
       font-weight: 600;
   }
   
+
+  @media (max-width: 667px){
+
+    #container{
+      flex-direction: column;
+    }
+    img{
+      width: 80%; 
+    }
+    .help{
+      font-size: 3em; 
+    }
+    #result{
+      width: 80%; 
+      height: auto; 
+    }
+    #octoDiv{
+      width: 100%; 
+    }
+  
+    }
+
+
   @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
@@ -83,23 +106,4 @@ body {
   }
 
 
-  @media(min-width: 667px){
-  body{
-    height: auto; 
-  }
-  #container{
-    display: flex;
-    flex-direction: column;
-  }
-  img{
-    width: 80%; 
-  }
-  #result{
-    width: 80%; 
-    height: auto; 
-  }
-  #octoDiv{
-    width: 100%; 
-  }
-
-  }
+ 
