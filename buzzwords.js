@@ -121,44 +121,59 @@ var meeting =  verb + ' ' + adj + ' ' + noun;
 document.getElementById("result").innerHTML = meeting;
 
 promoteOcto(); 
+}
 
-setTimeout(function() {
-    oct.classList.remove("octo"); 
-  }, 500);
+function jiggleOcto(){
+    const oct = document.getElementById("myImg");
+    oct.classList.add("octo"); 
+
+    setTimeout(function() {
+        oct.classList.remove("octo"); 
+      }, 500);
 
 }
+
+var promotionText = "Help Octopus Get Promoted!"; 
 
 function promoteOcto() {
  octoBand++; 
-
-switch(octoBand) {
+ 
+switch(octoBand) {  //ate the last donut in the breakroom 
   case 5:
-    document.getElementById("promoteMe").innerHTML = "Octopus Nailed his conference call!"; 
+    promotionText = "Octopus Nailed his conference call!"; 
     break;
   case 9:
-    document.getElementById("promoteMe").innerHTML = "Octopus got promoted to Assistant Manager!"; 
+    promotionText = "Octopus got promoted to Assistant Manager!"; 
     break;
   case 13:
-        document.getElementById("promoteMe").innerHTML = "Octopus is taking night classes for his Master's"; 
-        break; 
+    promotionText = "Octopus is taking night classes for his Master's"; 
+    break; 
   case 20:
-        document.getElementById("promoteMe").innerHTML = "Octopus got promoted to Manager!"; 
-       break;
+    promotionText = "Octopus got promoted to Manager!"; 
+    break;
   case 24:
-    document.getElementById("promoteMe").innerHTML = "Octopus got promoted Vice President of Technology!"; 
+    promotionText = "Octopus got promoted Vice President of Technology!"; 
     break;      
-   case 29:
-        document.getElementById("promoteMe").innerHTML = "Octopus made it to CEO!! ";       
+  case 29:
+    promotionText = "Octopus made it to CEO!! ";       
     break;  
-    case 33:
-        document.getElementById("promoteMe").innerHTML = "Octopus fired your lazy ass";    
-        break;    
-   case 37:
-            document.getElementById("promoteMe").innerHTML = "Octopus sold the company for a cool billion";       
+  case 33:
+    promotionText = "Octopus fired your lazy ass";    
+    break;    
+  case 37:
+    promotionText = "Octopus sold the company for a cool billion";       
     break;  
-    case 40:
-        document.getElementById("promoteMe").innerHTML = "Octopus is on a yacht with supermodels";       
+  case 40:
+    promotionText = "Octopus is on a yacht with supermodels";       
     break;   
-  
-}
+  case 45:
+    promotionText = "Why are you still here?";       
+    break;   
+  default:
+       jiggleOcto();
+   break; 
+} //end switch 
+
+  document.getElementById("promoteMe").innerHTML = promotionText; 
+
 }

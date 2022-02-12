@@ -81,3 +81,25 @@ body {
       transform: translate3d(4px, 0, 0);
     }
   }
+
+
+  @media(min-width: 667px){
+  body{
+    height: auto; 
+  }
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+  img{
+    width: 80%; 
+  }
+  #result{
+    width: 80%; 
+    height: auto; 
+  }
+  #octoDiv{
+    width: 100%; 
+  }
+
+  }
