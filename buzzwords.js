@@ -102,7 +102,7 @@ var nouns = [
 "Deep Dive"
 ];
 
-var octoBand = 0; 
+
 
 function nameMeeting() {
 //3 random variables
@@ -134,46 +134,56 @@ function jiggleOcto(){
 }
 
 var promotionText = "Help Octopus Get Promoted!"; 
+var octoBand = 0; 
+
 
 function promoteOcto() {
  octoBand++; 
- 
+
 switch(octoBand) {  //ate the last donut in the breakroom 
   case 5:
-    promotionText = "Octopus Nailed his conference call!"; 
+    makeProgress("Octopus Nailed his conference call!"); //this works!! 
     break;
   case 9:
-    promotionText = "Octopus got promoted to Assistant Manager!"; 
+    makeProgress("Octopus got promoted to Assistant Manager!"); 
     break;
   case 13:
-    promotionText = "Octopus is taking night classes for his Master's"; 
+    makeProgress("Octopus is taking night classes for his Master's"); 
     break; 
   case 20:
-    promotionText = "Octopus got promoted to Manager!"; 
+    makeProgress("Octopus got promoted to Manager!"); 
     break;
   case 24:
-    promotionText = "Octopus got promoted Vice President of Technology!"; 
+    makeProgress("Octopus got promoted Vice President of Technology!"); 
     break;      
   case 29:
-    promotionText = "Octopus made it to CEO!! ";       
+    makeProgress("Octopus made it to CEO!!");       
     break;  
   case 33:
-    promotionText = "Octopus fired your lazy ass";    
+    makeProgress("Octopus fired your lazy ass");    
     break;    
   case 37:
-    promotionText = "Octopus sold the company for a cool billion";       
+    makeProgress("Octopus sold the company for a cool billion");       
     break;  
   case 40:
-    promotionText = "Octopus is on a yacht with supermodels";       
+    makeProgress("Octopus is on a yacht with supermodels");       
     break;   
   case 45:
-    promotionText = "Why are you still here?";       
+    makeProgress("Why are you still here?");       
     break;   
   default:
        jiggleOcto();
    break; 
 } //end switch 
 
-  document.getElementById("promoteMe").innerHTML = promotionText; 
+}
 
+var progressWidth = 0; 
+
+function makeProgress(p){
+  progressWidth += 10; 
+  document.getElementById("promoteMe").innerHTML = p; 
+  document.getElementById("progress").style.color = "#FFF"; 
+  document.getElementById("progress").style.width = progressWidth + "%"; 
+  document.getElementById("progress").innerHTML = progressWidth + "%"; 
 }

@@ -17,13 +17,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px; 
+    width: 900px; 
     text-align: center;
     margin: 30px auto; 
     padding: 60px 40px;
     border-radius: 40px;
     background-color: white;
 }
+
+#progressBorder{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#progress {
+  background-color: rgba(137,195,34,1);
+  color: black;
+  width: 0%; 
+  height: 24px; 
+  text-align: center;
+}
+
 
 #myBtn{
     font-weight: 900;
@@ -52,20 +65,25 @@ body {
     background-color: white;
 }
 
-.octo {
+/* keframes animation */ 
+ .octo {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
   } 
 
-  .help {
+  #promoteMe {
       font-size: 1.5em;
       font-weight: 600;
+      height: 60px;
   }
   
-
-  @media (max-width: 1001px){
+/* max width 667px is not working ?? only 1000+ */ 
+  @media (max-width: 1001px){ 
+    body{
+      height: 2000px;
+    }
 
     #container{
       flex-direction: column;
@@ -73,12 +91,19 @@ body {
     img{
       width: 80%; 
     }
-    .help{
+    #myBtn{
+      font-size: 2em;
+      width: 30%; 
+    }
+    #promoteMe{
       font-size: 3em; 
+      height: 120px;
+      
     }
     #result{
       width: 80%; 
       height: auto; 
+      font-size: 2em; 
     }
     #octoDiv{
       width: 100%; 
