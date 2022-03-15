@@ -120,7 +120,8 @@ var meeting =  verb + ' ' + adj + ' ' + noun;
 
 document.getElementById("result").innerHTML = meeting;
 
-promoteOcto(); 
+//promoteOcto();
+jiggleOcto();  
 }
 
 function jiggleOcto(){
